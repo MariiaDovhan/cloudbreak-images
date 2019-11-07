@@ -5,10 +5,10 @@ WantedBy={{ pillar['salt_bootstrap_target'] }}.target
 Description=Salt Bootstrap Service
 After=network.target
 After=network.service
-After=cloud-final.service
+#After=cloud-final.service
 After=waagent.service
 After=google-startup-scripts.service
-Wants=cloud-final.service
+#Wants=cloud-final.service
 Wants=waagent.service
 Wants=google-startup-scripts.service
 
